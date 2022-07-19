@@ -15,7 +15,7 @@ public class HttpExample {
 
             try {
                 CloseableHttpClient client = HttpClients.createDefault();
-                CloseableHttpResponse response = client.execute(new HttpGet("https://www.onliner.by/"));
+                CloseableHttpResponse response = client.execute(new HttpGet("https://www.4pda.ru/"));
                 HttpEntity entity = response.getEntity();
                 if (entity != null) {
                     String data = IOUtils.toString(entity.getContent());
